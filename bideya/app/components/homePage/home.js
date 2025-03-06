@@ -1,7 +1,7 @@
 // components/HeroSection.js
 const HeroSection = () => {
     return (
-      <section className="flex justify-center items-center min-h-screen bg-white pt-2">
+      <section className="flex justify-center items-center min-h-165 bg-white pt-2">
         <div className="w-full max-w-7xl   bg-yellow-500 rounded-xl p-10 md:p-16 flex flex-col md:flex-row items-center md:items-start">
           
           {/* Texte à gauche */}
@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Image à droite */}
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
             <div className="w-full h-64 md:h-90 bg-cover bg-center rounded-lg" 
-                 style={{ backgroundImage: "url('/landing-Page.jpeg')" }}>
+                 style={{ backgroundImage: "url('/')" }}>
             </div>
           </div>
   

@@ -9,10 +9,10 @@ import BOOKING from "./components/boocking/boock";
 import Confirm from "./components/boocking/confirm"
 import Hackathon  from "./components/hackaton/hackaton";
 import Conference from "./components/conference/conference";
-
+import RelSection from "./components/RelSection/relsection"
 
 import Test2 from "./components/test2/test"
-
+import Workshop from "./components/workshop/workshp"
 export default function Home() {
   return (
     <div >
@@ -29,6 +29,8 @@ export default function Home() {
 
    
     <Test2/>
+    <RelSection/>
+    <Workshop/>
 
 
     
