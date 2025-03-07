@@ -8,41 +8,41 @@ const NavBar = () => {
     <nav className="flex items-center justify-between px-3 py-2 bg-white shadow-sm">
       {/* Logo centré */}
 
-      <div className="text-4xl font-extrabold text-blue-900 ml-8"> {/* Taille et position de "Bideya Boost" */}
+      <div className="text-2xl font-extrabold text-blue-900 ml-8"> {/* Taille et position de "Bideya Boost" */}
         Rel Section
       </div>
       {/* Navigation */}
-      <ul className="flex space-x-12 flex-1 justify-center text-blue-700 text-xl font-semibold"> {/* Modifications ici */}
+      <ul className="flex space-x-12 flex-1 justify-center text-blue-700 text-l font-semibold"> {/* Modifications ici */}
       <li>
-          <Link href="./infoSession.js" className="text-blue-900 hover:text-blue-700">
+          <Link href="./infoSession.js" className="text-blue-900 hover:border-b-2">
            Home
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-blue-900 hover:text-blue-700">
+          <Link href="/" className="text-blue-900 hover:border-b-2">
           Booking
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-blue-900 hover:text-blue-700">
+          <Link href="/" className="text-blue-900 hover:border-b-2">
            Podcast
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-blue-900 hover:text-blue-700">
+          <Link href="/" className="text-blue-900 hover:border-b-2 ">
           Reels
           </Link>
         </li>
       
         <li>
-          <Link href="/" className="text-blue-700 hover:text-blue-900 border-b-2 border-blue-500">
+          <Link href="/" className="text-blue-700  hover:border-b-2 border-blue-500">
             Features
           </Link>
         </li>
       </ul>
 
       {/* Icône et bouton alignés à droite */}
-      <button className="px-4 py-3 text-blue-900  border-blue-900 rounded-full text-lg font-semibold transition-all"
+      <button className="px-4 py-3 text-blue-900  hover:border-b-2  border-blue-900 rounded-full text-l font-semibold transition-all"
   style={{
     background: 'linear-gradient(to right, #FFC107, #002F6C)', // Dégradé de jaune à bleu
     color: 'black', // Texte noir pour une meilleure lisibilité
