@@ -29,29 +29,29 @@ const NavBar = () => {
       </div>
 
       {/* Navigation */}
-      <ul className="flex space-x-12 flex-1 justify-center text-blue-700 text-xl font-semibold"> {/* Modifications ici */}
+      <ul className="flex space-x-10 flex-1 justify-center text-blue-700 text-l font-semibold"> {/* Modifications ici */}
         <li>
-          <Link href="/" className="text-blue-700 hover:text-blue-900 border-b-2 border-blue-500">
+          <Link href="/" className="text-blue-700 hover:text-blue-900 hover:border-b-2 border-blue-500">
             Home
           </Link>
         </li>
         <li>
-          <Link href="categorie" className="text-blue-900 hover:text-blue-700">
+          <Link href="categorie" className="text-blue-900 hover:border-b-2">
             Categories
           </Link>
         </li>
         <li>
-          <Link href="/about" className="text-blue-900 hover:text-blue-700">
+          <Link href="/about" className="text-blue-900 hover:border-b-2">
             About
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="text-blue-900 hover:text-blue-700">
+          <Link href="/contact" className="text-blue-900 hover:border-b-2">
             Contact Us
           </Link>
         </li>
         <li>
-          <Link href="/features" className="text-blue-900 hover:text-blue-700">
+          <Link href="/features" className="text-blue-900 hover:border-b-2">
             Features
           </Link>
         </li>
@@ -59,8 +59,8 @@ const NavBar = () => {
 
       {/* Icône et bouton alignés à droite */}
       <div className="flex items-center space-x-4 ml-auto">
-        <FiSearch className="text-blue-500 w-6 h-6 hover:text-blue-700 cursor-pointer" /> {/* Taille de l'icône augmentée */}
-        <button className="px-6 py-3 text-blue-700 border border-blue-700 rounded-full hover:bg-blue-500 hover:text-white text-lg font-semibold"> {/* Taille du bouton augmentée */}
+        <FiSearch className="text-blue-500 w-6 h-6 hover:border-b-2 cursor-pointer" /> {/* Taille de l'icône augmentée */}
+        <button className="px-4 py-3 text-blue-700 border border-blue-700 rounded-full  hover:border-b-2  text-l font-semibold"> {/* Taille du bouton augmentée */}
           Get Started
         </button>
       </div>

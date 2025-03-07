@@ -12,7 +12,7 @@ const HeroSection = () => {
             <p className="text-lg text-gray-900">
               Interactive platform targeted at Orientation and Guidance of Tunisian Students
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg mt-4 hover:bg-blue-600 transition">
+            <button className="bg-blue-700 text-white px-6 py-3 center rounded-lg mt-4 hover:bg-blue-600 transition">
               Get Started
             </button>
           </div>
@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Image à droite */}
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
             <div className="w-full h-64 md:h-90 bg-cover bg-center rounded-lg" 
-                 style={{ backgroundImage: "url('/')" }}>
+                 style={{ backgroundImage: "url('/home.png')" }}>
             </div>
           </div>
   
