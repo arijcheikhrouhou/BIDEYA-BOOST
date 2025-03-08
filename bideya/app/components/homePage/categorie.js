@@ -1,70 +1,324 @@
-const Categories = () => {
-  const categories = [
-    {
-      title: "Sports",
-      description:
-        "Free sports education. This is the first step towards a career in sports writing. You have to be well acquainted with the rules.",
-      image: "/sport.png",
-      bgColor: "bg-[#AAC6FC]",
-      borderColor: "border-white"
-    },
-    {
-      title: "Finance",
-      description:
-        "Financial free education content can help fill your sales funnel with qualified leads, but only when it's considered strategically.",
-      image: "/finance.png",
-      bgColor: "bg-[#7FD7C2]",
-      borderColor: "border-white"
-    },
-    {
-      title: "Science",
-      description:
-        "Dive into science education to explore innovative ideas and enhance your knowledge.",
-      image: "/medecin.png",
-      bgColor: "bg-[#FBCE01]",
-      borderColor: "border-white"
-    },
-    {
-      title: "Design",
-      description:
-        "Learn the basics of design and improve your creativity with free educational content.",
-      image: "/image-design.png",
-      bgColor: "bg-[#EFBED3]",
-      borderColor: "border-white"
-    }
-  ];
+import React from 'react';
 
+const FourRectanglesWithTitles = () => {
   return (
-    <section className="flex justify-center items-center bg-white p-6">
-      <div className="w-full max-w-6xl flex flex-col md:flex-row gap-4">
-        
-        {/* Sidebar Categories */}
-        <div className="bg-yellow-500 text-black font-bold text-2xl p-2 rounded-lg flex items-center md:w-1/6 justify-center">
-          <span className="rotate-90 md:rotate-0">Categories</span>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        backgroundColor: '#FFFFFF',
+        gap: '20px',
+      }}
+    >
+      {/* Conteneur principal pour les rectangles et le rectangle vertical */}
+      <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+        {/* Rectangle vertical "Categories" */}
+        <div
+          style={{
+            width: '75px',
+            height: '497px',
+            backgroundColor: '#F9BE01',
+            borderRadius: '10px',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'relative', // Pour positionner le texte verticalement
+          }}
+        >
+          {/* Texte "Categories" en vertical */}
+          <div
+            style={{
+              color: 'black',
+              fontSize: '30px',
+              fontWeight: 'bold',
+              transform: 'rotate(-90deg)', // Rotation du texte
+              whiteSpace: 'nowrap', // Empêche le texte de se diviser
+            }}
+          >
+            Categories
+          </div>
         </div>
-        
-        {/* Grid des cartes */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1">
-          {categories.map((item, index) => (
-            <div key={index} className={`flex items-center p-6 rounded-xl shadow-md ${item.bgColor}`}>
-              
-              {/* Image avec cadre plus grand et bordure blanche */}
-              <div className="w-60 h-60 rounded-lg border-4 border-white p-3 shadow-md mr-6 flex justify-center items-center">
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover rounded-md" />
-              </div>
 
-              {/* Texte */}
-              <div>
-                <h3 className="text-xl font-bold text-black">{item.title}</h3>
-                <p className="text-black text-md">{item.description}</p>
-              </div>
+        {/* Premier groupe de rectangles (rectangles 1 et 3) */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {/* Premier rectangle avec image à gauche et texte à droite */}
+          <div
+            style={{
+              width: '580px',
+              height: '231px',
+              backgroundColor: '#AAC6FC',
+              borderRadius: '10px',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+              display: 'flex',
+              alignItems: 'center',
+              padding: '20px',
+            }}
+          >
+            {/* Cadre blanc pour l'image à gauche */}
+            <div
+              style={{
+                width: '150px',
+                height: '150px',
+                borderRadius: '10px', // Coins arrondis
+                border: '4px solid white', // Cadre blanc épais
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                overflow: 'hidden', // Pour cacher les bords de l'image
+                marginRight: '20px', // Espacement entre l'image et le texte
+              }}
+            >
+              {/* Image à gauche */}
+              <img
+                src="/Sport.png" // Chemin de l'image dans le dossier public
+                alt="Sport"
+                style={{
+                  width: '100%', // L'image remplit le cadre
+                  height: '100%',
+                  objectFit: 'cover', // Ajuste l'image pour couvrir le cadre
+                }}
+              />
             </div>
-          ))}
+
+            {/* Contenu à droite (titre + paragraphe) */}
+            <div
+              style={{
+                flex: 1, // Prend l'espace disponible
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}
+            >
+              {/* Titre "Sports" */}
+              <h3
+                style={{
+                  color: 'black',
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  margin: '0 0 20px 0', // Espacement sous le titre
+                }}
+              >
+                Sports
+              </h3>
+
+              {/* Paragraphe */}
+              <p style={{ color: '#013069', margin: 0, fontSize: '15px', lineHeight: '1.5' }}>
+                Free sports education. This is the first step towards a career in sports writing. You have to be well acquainted with the rules.
+              </p>
+            </div>
+          </div>
+
+          {/* Troisième rectangle avec image à gauche et texte à droite */}
+          <div
+            style={{
+              width: '580px',
+              height: '231px',
+              backgroundColor: '#FBCE01',
+              borderRadius: '10px',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+              display: 'flex',
+              alignItems: 'center',
+              padding: '20px',
+            }}
+          >
+            {/* Cadre blanc pour l'image à gauche */}
+            <div
+              style={{
+                width: '150px',
+                height: '150px',
+                borderRadius: '10px',
+                border: '4px solid white',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                overflow: 'hidden',
+                marginRight: '20px',
+              }}
+            >
+              {/* Image à gauche */}
+              <img
+                src="/medecin.png" // Chemin de l'image dans le dossier public
+                alt="Science"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            </div>
+
+            {/* Contenu à droite (titre + paragraphe) */}
+            <div
+              style={{
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}
+            >
+              {/* Titre "Science" */}
+              <h3
+                style={{
+                  color: 'black',
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  margin: '0 0 20px 0',
+                }}
+              >
+                Science
+              </h3>
+
+              {/* Paragraphe */}
+              <p style={{ color: '#013069', margin: 0, fontSize: '15px', lineHeight: '1.5' }}>
+                Dive into science education to explore innovative ideas and enhance your knowledge.
+              </p>
+            </div>
+          </div>
         </div>
 
+        {/* Deuxième groupe de rectangles (rectangles 2 et 4) */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {/* Deuxième rectangle avec image à gauche et texte à droite */}
+          <div
+            style={{
+              width: '580px',
+              height: '231px',
+              backgroundColor: '#7FD7C2',
+              borderRadius: '10px',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+              display: 'flex',
+              alignItems: 'center',
+              padding: '20px',
+            }}
+          >
+            {/* Cadre blanc pour l'image à gauche */}
+            <div
+              style={{
+                width: '150px',
+                height: '150px',
+                borderRadius: '10px',
+                border: '4px solid white',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                overflow: 'hidden',
+                marginRight: '20px',
+              }}
+            >
+              {/* Image à gauche */}
+              <img
+                src="/Finance.png" // Chemin de l'image dans le dossier public
+                alt="Finance"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            </div>
+
+            {/* Contenu à droite (titre + paragraphe) */}
+            <div
+              style={{
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}
+            >
+              {/* Titre "Finance" */}
+              <h3
+                style={{
+                  color: 'black',
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  margin: '0 0 20px 0',
+                }}
+              >
+                Finance
+              </h3>
+
+              {/* Paragraphe */}
+              <p style={{ color: '#013069', margin: 0, fontSize: '15px', lineHeight: '1.5' }}>
+                Financial free education content can help fill your sales funnel with qualified leads, but only when it’s considered strategically.
+              </p>
+            </div>
+          </div>
+
+          {/* Quatrième rectangle avec image à gauche et texte à droite */}
+          <div
+            style={{
+              width: '580px',
+              height: '231px',
+              backgroundColor: '#EFBED3',
+              borderRadius: '10px',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+              display: 'flex',
+              alignItems: 'center',
+              padding: '20px',
+            }}
+          >
+            {/* Cadre blanc pour l'image à gauche */}
+            <div
+              style={{
+                width: '150px',
+                height: '150px',
+                borderRadius: '10px',
+                border: '4px solid white',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                overflow: 'hidden',
+                marginRight: '20px',
+              }}
+            >
+              {/* Image à gauche */}
+              <img
+                src="/art.png" // Chemin de l'image dans le dossier public
+                alt="Design"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            </div>
+
+            {/* Contenu à droite (titre + paragraphe) */}
+            <div
+              style={{
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}
+            >
+              {/* Titre "Design" */}
+              <h3
+                style={{
+                  color: 'black',
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  margin: '0 0 20px 0',
+                }}
+              >
+                Design
+              </h3>
+
+              {/* Paragraphe */}
+              <p style={{ color: '#013069', margin: 0, fontSize: '15px', lineHeight: '1.5' }}>
+                Learn the basics of design and improve your creativity with free educational content.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Categories;
+export default FourRectanglesWithTitles;
