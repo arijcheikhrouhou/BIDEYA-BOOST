@@ -22,7 +22,22 @@ import LesCarreau from './components/MedcinePage/M_LesCarreau';
 export default function Home() {
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
-    
+    <Nav />
+    <Hero />
+    <About />
+    <Categorie/>
+  
+    <Footer/>
+    <BOOKING/>
+    <Confirm/>
+    <Hackathon/>
+    <Conference/>
+    <InfoSession/>
+
+   
+    <Test2/>
+    <RelSection/>
+    <Workshop/>
       {/* Composant Navigateur (En-tête, liste et bouton "Get Started") */}
       <Navi>
         /</Navi>
@@ -49,5 +64,4 @@ export default function Home() {
     </div>
   );
 };
-
 

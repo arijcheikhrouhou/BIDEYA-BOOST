@@ -26,7 +26,7 @@ const LesCarreau = () => {
           {/* Titre */}
           <div
             style={{
-              fontSize: '24px', // Taille du texte
+              fontSize: '23px', // Taille du texte
               fontWeight: 'bold', // Texte en gras
               color: '#000000', // Couleur du texte (noir)
               textAlign: 'center', // Texte centré
@@ -69,7 +69,7 @@ const LesCarreau = () => {
           {/* Titre */}
           <div
             style={{
-              fontSize: '24px', // Taille du texte
+              fontSize: '23px', // Taille du texte
               fontWeight: 'bold', // Texte en gras
               color: '#000000', // Couleur du texte (noir)
               textAlign: 'center', // Texte centré
@@ -115,7 +115,7 @@ const LesCarreau = () => {
           {/* Titre */}
           <div
             style={{
-              fontSize: '24px', // Taille du texte
+              fontSize: '23px', // Taille du texte
               fontWeight: 'bold', // Texte en gras
               color: '#000000', // Couleur du texte (noir)
               textAlign: 'center', // Texte centré
@@ -158,7 +158,7 @@ const LesCarreau = () => {
           {/* Titre */}
           <div
             style={{
-              fontSize: '24px', // Taille du texte
+              fontSize: '23px', // Taille du texte
               fontWeight: 'bold', // Texte en gras
               color: '#000000', // Couleur du texte (noir)
               textAlign: 'center', // Texte centré
@@ -218,12 +218,12 @@ const LesCarreau = () => {
           }}
         >
           {/* Icône IoArrowRedoOutline */}
-          <IoArrowRedoOutline style={{ fontSize: '40px', color: '#000000' }} /> {/* Taille et couleur de l'icône */}
+          <IoArrowRedoOutline style={{ fontSize: '35px', color: '#000000' }} /> {/* Taille et couleur de l'icône */}
 
           {/* Texte "Wajahni" */}
           <span
             style={{
-              fontSize: '30px', // Taille du texte
+              fontSize: '25px', // Taille du texte
               fontWeight: 'bold', // Texte en gras
               color: '#000000', // Couleur du texte (noir)
             }}

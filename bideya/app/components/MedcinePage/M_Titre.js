@@ -5,7 +5,7 @@ const Titre = () => {
         {/* Rectangle pour le titre "Medecine" */}
       <div
         style={{
-          width: '254px', // Largeur du rectangle
+          width: '240px', // Largeur du rectangle
           height: '56px', // Hauteur du rectangle
           backgroundColor: '#F9C85D', // Couleur de fond
           borderRadius: '30px', // Coins arrondis
@@ -21,7 +21,7 @@ const Titre = () => {
         {/* Titre "Medecine" */}
         <div
           style={{
-            fontSize: '24px', // Taille du texte
+            fontSize: '30px', // Taille du texte
             fontWeight: 'bold', // Texte en gras
             color: '#000000', // Couleur du texte (noir)
           }}
