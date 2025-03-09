@@ -42,9 +42,9 @@ export default Page;
 import React from 'react';
 import Navi from '@/app/components/MedcinePage/M_Navigateur';
 import Parag from '@/app/components/MedcinePage/M_Parag';
-import Titre from './components/MedcinePage/Titre';
-import Bande from './components/MedcinePage/Bande';
-import LesCarreau from './components/MedcinePage/LesCarreau';
+import Titre from './components/MedcinePage/M_Titre';
+import Bande from './components/MedcinePage/M_Bande';
+import LesCarreau from './components/MedcinePage/M_LesCarreau';
 
 
 const Page = () => {
@@ -85,7 +85,7 @@ export default Page;
 
 //Pour l'ingenieurie 
 import React from 'react';
-import Bande from './components/EngineeringPage/Bande';
+import Bande from './components/EngineeringPage/EN_Bande';
 import Cadre from '@/app/components/EngineeringPage/EN_LesCarreeaux';
 import Navi from '@/app/components/EngineeringPage/EN_Navigateur';
 import Parag from '@/app/components/EngineeringPage/EN_Paragraphe';
@@ -211,4 +211,92 @@ const Page = () => {
     </div>
   );
 };
+export default Page;
+
+
+
+
+//Les catégories
+import React from 'react';
+import Navi from '@/app/components/CategoriesPage/C_Navigateur';
+import Titre from '@/app/components/CategoriesPage/C_Titre';
+import Categories from '@/app/components/CategoriesPage/C_Catégories';
+import Def from '@/app/components/CategoriesPage/C_LesDéfinitions';
+
+
+const Page = () => {
+  return (
+    <div style={{ position: 'relative', minHeight: '100vh' }}>
+      {/* Composant Navigateur (En-tête, liste et bouton "Get Started") */}
+      <Navi>
+        /</Navi>
+      {/* Le titre + stor by */}
+      <Titre>
+
+      </Titre>
+      {/* Les 4 catégories */}
+      <Categories>
+        
+      </Categories>
+      {/* Les definitions de chaque catégories */}
+      <Def>
+        
+      </Def>
+      
+
+     
+    </div>
+  );
+};
+
+export default Page;
+
+
+
+
+
+
+
+
+
+//Podcast
+
+import React from 'react';
+import Navi from '@/app/components/PodcastPage/P_Navigateur';
+import Titre from '@/app/components/PodcastPage/P_Titre';
+import Libary from '@/app/components/PodcastPage/P_Library';
+import Recherche from '@/app/components/PodcastPage/P_Recherche';
+import Footer from '@/app/components/PodcastPage/P_Footer';
+
+const Page = () => {
+  return (
+    <div style={{ position: 'relative', minHeight: '100vh' }}>
+      {/* Composant Navigateur (En-tête, liste et bouton "Get Started") */}
+      <Navi>
+        /</Navi>
+        {/* titre */}
+
+      <Titre>
+
+      </Titre>
+      {/* la librairie */}
+      <Libary>
+        
+      </Libary>
+      {/*Recherche*/ }
+     <Recherche>
+
+     </Recherche>
+
+     {/*footer*/}
+     <Footer>
+      
+     </Footer>
+      
+
+     
+    </div>
+  );
+};
+
 export default Page;
