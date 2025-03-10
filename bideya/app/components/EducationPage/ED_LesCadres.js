@@ -76,7 +76,7 @@ const LesCarreau = () => {
               marginBottom: '16px', // Espace sous le titre
             }}
           >
-            QNecessary Qualities
+            Necessary Qualities
           </div>
           {/* Paragraphe */}
           <div

@@ -52,7 +52,7 @@ const LesRectangle = () => {
         </div>
 
         {/* Bouton "Explore More" pour Medicine */}
-        <Link href="/MedcinePage" passHref>
+        <Link href="/Medicine" passHref>
           <div
             style={{
               width: '178px', // Largeur du bouton
@@ -118,7 +118,7 @@ const LesRectangle = () => {
         </div>
 
         {/* Bouton "Explore More" pour Engineering */}
-        <Link href="/EngineeringPage" passHref>
+        <Link href="/Engineering" passHref>
           <div
             style={{
               width: '178px', // Largeur du bouton
@@ -184,31 +184,31 @@ const LesRectangle = () => {
         </div>
 
         {/* Bouton "Explore More" pour Business */}
-        <Link href="/BusinessPage" passHref>
-          <div
-            style={{
-              width: '178px', // Largeur du bouton
-              height: '80px', // Hauteur du bouton
-              backgroundColor: '#F9C85D', // Couleur de fond
-              borderRadius: '12px', // Coins arrondis
-              display: 'flex',
-              justifyContent: 'center', // Centre horizontalement
-              alignItems: 'center', // Centre verticalement
-              marginTop: '75px', // Marge fixe en haut pour aligner les boutons
-              cursor: 'pointer', // Curseur en forme de main au survol
-            }}
-          >
-            <div
-              style={{
-                fontSize: '20px', // Taille du texte
-                fontWeight: 'bold', // Texte en gras
-                color: '#013069', // Couleur du texte
-              }}
-            >
-              Explore More
-            </div>
-          </div>
-        </Link>
+        <Link href="/Business" passHref>
+  <div
+    style={{
+      width: '178px', // Largeur du bouton
+      height: '80px', // Hauteur du bouton
+      backgroundColor: '#F9C85D', // Couleur de fond
+      borderRadius: '12px', // Coins arrondis
+      display: 'flex',
+      justifyContent: 'center', // Centre horizontalement
+      alignItems: 'center', // Centre verticalement
+      marginTop: '75px', // Marge fixe en haut pour aligner les boutons
+      cursor: 'pointer', // Curseur en forme de main au survol
+    }}
+  >
+    <div
+      style={{
+        fontSize: '20px', // Taille du texte
+        fontWeight: 'bold', // Texte en gras
+        color: '#013069', // Couleur du texte
+      }}
+    >
+      Explore More
+    </div>
+  </div>
+</Link>
       </div>
 
       {/* Rectangle 4 - Education */}
@@ -250,7 +250,7 @@ const LesRectangle = () => {
         </div>
 
         {/* Bouton "Explore More" pour Education */}
-        <Link href="/EducationPage" passHref>
+        <Link href="/Education" passHref>
           <div
             style={{
               width: '178px', // Largeur du bouton

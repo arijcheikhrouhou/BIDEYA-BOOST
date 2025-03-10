@@ -2,7 +2,7 @@ const Titre = () => {
     return (
       <div>
   
-        {/* Rectangle pour le titre "Medecine" */}
+        {/* Rectangle pour le titre "Medicine" */}
       <div
         style={{
           width: '240px', // Largeur du rectangle
@@ -18,7 +18,7 @@ const Titre = () => {
         }}
       >
       
-        {/* Titre "Medecine" */}
+        {/* Titre "Medicine" */}
         <div
           style={{
             fontSize: '30px', // Taille du texte
@@ -26,7 +26,7 @@ const Titre = () => {
             color: '#000000', // Couleur du texte (noir)
           }}
         >
-          Medecine
+          Medicine
         </div>
       </div>
       </div>

@@ -1,53 +1,36 @@
-import Image from "next/image";
-import Nav from "./components/homePage/nav"
-import Footer from "./components/homePage/footer"
-import Hero from "./components/homePage/home"
-import About from "./components/homePage/aboutUs";
-import Categorie  from "./components/homePage/categorie";
-import InfoSession from "./components/homePage/infoSession"
-import BOOKING from "./components/boocking/boock";
-import Confirm from "./components/boocking/confirm"
-import Hackathon  from "./components/hackaton/hackaton";
-import Conference from "./components/conference/conference";
-import RelSection from "./components/RelSection/relsection"
-
-import Test2 from "./components/test2/test"
-import Workshop from "./components/workshop/workshp"
 import React from 'react';
-import Navi from '@/app/components/MedcinePage/M_Navigateur';
-import Parag from '@/app/components/MedcinePage/M_Parag';
-import Titre from './components/MedcinePage/M_Titre';
-import Bande from './components/MedcinePage/M_Bande';
-import LesCarreau from './components/MedcinePage/M_LesCarreau';
-export default function Home() {
+import Navi from '@/app/components/LeGuide/G_Navigateur';
+import Rguide from '@/app/components/LeGuide/G_Rguide';
+import BRech from '@/app/components/LeGuide/G_BRech';
+import LesRectangle from '@/app/components/LeGuide/G_LesRectangles';
+import Bande from '@/app/components/LeGuide/G_Bande';
+
+const Page = () => {
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
-    
       {/* Composant Navigateur (En-tête, liste et bouton "Get Started") */}
       <Navi>
         /</Navi>
 
-      {/* La paragraphe de medecine avec le rectangle */}
-      <Parag>
+      {/* Composant R_guide (Rectangle "Guide" et texte "Guide") */}
+      <Rguide>
 
-      </Parag>
+      </Rguide>
 
-      {/* Le titre de cette page */}
-      <Titre>
+      {/* Composant BRech (Barre de recherche, phrase centrée et ligne "SUGGESTION") */}
+      <BRech>
+      </BRech>
 
-      </Titre>
+      {/* Composant LesRectangle (4 rectangles avec leur contenu) */}
+      <LesRectangle>
 
-      {/* La bordure en bas */}
+      </LesRectangle>
+
+      {/* Composant Bande (Bande en bas de la page) */}
       <Bande>
 
       </Bande>
-      
-      {/* Les 4 rectangle avec leur continue */}
-      <LesCarreau>
-
-      </LesCarreau>
     </div>
   );
 };
-
-
+export default Page;
