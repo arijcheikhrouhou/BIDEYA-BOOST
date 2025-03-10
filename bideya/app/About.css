@@ -1,0 +1,71 @@
+.about-container {
+  background-image: url("../assets/aboutus.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 40px 20px;
+} 
+  .header {
+    background: linear-gradient(to right, #ffde59, #ffd700);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #002147;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .about-enactus, .about-isima {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .stat-box {
+    background: #ffde59;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 100px;
+  }
+  
+  .stat-number {
+    font-size: 20px;
+    display: block;
+    color: #002147;
+  }
+  
+  .stat-text {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .about-isima {
+    background: #f9f9f9;
+  }
+  
